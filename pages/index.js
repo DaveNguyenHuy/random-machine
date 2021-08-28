@@ -90,9 +90,11 @@ export default function Home() {
             <button disabled={playing} onClick={handleReset} id="start">Reset</button>
           </div>
         </div>
-        <div className="results">
-          {`Kết quả: ${temporaryResult.join(', ')}`}
-        </div>
+        {!!temporaryResult.length && (
+          <div className="results">
+            {`Kết quả: ${temporaryResult.join(', ')}`}
+          </div>
+        )}
       </div>
     </div>
 
