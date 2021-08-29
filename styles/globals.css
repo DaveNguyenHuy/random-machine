@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'STIX Two Text', serif;
+  font-family: "STIX Two Text", serif;
   overflow: hidden;
 }
 
@@ -20,7 +20,7 @@ body {
   position: relative;
   height: 100vh;
   padding: 50px 40px;
-  background-color: #01A04A;
+  background-color: #01a04a;
   display: flex;
   flex-direction: column;
   max-height: 800px;
@@ -49,7 +49,7 @@ label span {
 }
 
 #start {
-  margin-right: 12px
+  margin-right: 12px;
 }
 
 @keyframes Logo1 {
@@ -169,16 +169,22 @@ button:disabled {
   font-weight: bold;
 }
 
-
 @media only screen and (max-width: 768px) {
   .container {
     width: 100%;
     padding: 40px 10px;
   }
 
+  .btns {
+    margin-left: 20px;
+  }
+
   .form {
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+  }
+
+  .inputs {
+    display: flex;
   }
 
   .result {
@@ -186,11 +192,12 @@ button:disabled {
   }
 
   label {
-    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
   }
 
-  .btns {
-    margin-top: 10px;
+  label input {
+    max-width: 160px;
   }
 
   h1 {
@@ -207,5 +214,47 @@ button:disabled {
     top: 20px;
     right: 5px;
     animation: Logo2 2s infinite;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .logo {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.525rem;
+  }
+
+  .desc {
+    font-size: 1.25rem;
+  }
+
+  .result {
+    min-height: 200px;
+    margin: 20px 0;
+    font-size: 100px;
+    border-radius: 10px;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btns {
+    margin: 0;
+    margin-top: 32px;
+  }
+
+  button#start {
+    margin-right: 24px;
+  }
+
+  .results {
+    padding-left: 4px;
+    padding-right: 16px;
+    margin-top: 32px;
+    font-size: 1.75rem;
   }
 }
