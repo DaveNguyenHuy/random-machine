@@ -90,7 +90,7 @@ label span {
 
 .result {
   min-height: 300px;
-  margin: 40px 0;
+  margin: 20px 0;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -169,7 +169,16 @@ button:disabled {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
+.author {
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 992px) {
   .container {
     width: 100%;
     padding: 40px 10px;
@@ -215,6 +224,10 @@ button:disabled {
     right: 5px;
     animation: Logo2 2s infinite;
   }
+
+  .results {
+    margin-top: 8px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -254,7 +267,7 @@ button:disabled {
   .results {
     padding-left: 4px;
     padding-right: 16px;
-    margin-top: 32px;
+    margin-top: 24px;
     font-size: 1.75rem;
   }
 }

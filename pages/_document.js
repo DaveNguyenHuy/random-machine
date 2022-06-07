@@ -14,6 +14,7 @@ class MyDocument extends Document {
             type="image/x-icon"
             href="static/logo.png"
           />
+          <title>Phần mềm quay số trúng thưởng</title>
         </Head>
         <body>
           <Main />
